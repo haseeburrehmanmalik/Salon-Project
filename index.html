@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ================= SEO ================= -->
+<title>Glamora Beauty Studio | Premium Salon & Beauty Services</title>
+<meta name="description" content="Experience premium hair, makeup, skincare, bridal and beauty services at Glamora Beauty Studio.">
+<meta name="keywords" content="glamora, beauty studio, salon, hair styling, makeup, bridal makeup, facial, manicure, pedicure, spa, Hyderabad salon">
+<meta name="author" content="Glamora Beauty Studio">
+<meta name="theme-color" content="#b76e79">
+<link rel="canonical" href="https://glamorabeauty.example/">
+
+<!-- ================= Open Graph ================= -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Glamora Beauty Studio">
+<meta property="og:title" content="Glamora Beauty Studio | Premium Salon & Beauty Services">
+<meta property="og:description" content="Experience premium hair, makeup, skincare, bridal and beauty services at Glamora Beauty Studio.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80">
+<meta property="og:url" content="https://glamorabeauty.example/">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- ================= Favicon ================= -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23b76e79'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='32' fill='%23fff' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+
+<!-- ================= Fonts ================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- ================= Styles ================= -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Image fallback helper (keeps layout intact if a remote image fails) -->
+<script>
+  window.__imgFallback = function (img) {
+    img.onerror = null;
+    img.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(
+      '<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000">' +
+      '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">' +
+      '<stop offset="0" stop-color="#f7ece4"/><stop offset="1" stop-color="#e8cfc8"/>' +
+      '</linearGradient></defs>' +
+      '<rect width="800" height="1000" fill="url(#g)"/>' +
+      '<text x="400" y="500" font-family="Georgia,serif" font-size="34" letter-spacing="6" ' +
+      'fill="#b76e79" text-anchor="middle">GLAMORA</text></svg>'
+    );
+  };
+</script>
+</head>
+
+<body>
+
+<!-- =========================================================
+     PRELOADER
+     ========================================================= -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <div class="preloader-logo">
+      <span class="pl-mark">G</span>
+      <div>
+        <strong>GLAMORA</strong>
+        <em>BEAUTY STUDIO</em>
+      </div>
+    </div>
+    <div class="preloader-bar"><span></span></div>
+    <p class="preloader-tag">BEAUTY · CONFIDENCE · YOU</p>
+  </div>
+</div>
+
+<!-- =========================================================
+     HEADER / NAVIGATION
+     ========================================================= -->
+<header class="header" id="header">
+  <div class="container header-inner">
+
+    <button class="icon-btn menu-toggle" id="menuToggle"
+            aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <a class="brand" href="#home" aria-label="Glamora Beauty Studio — home">
+      <span class="brand-mark">G</span>
+      <span class="brand-text">
+        <strong>GLAMORA</strong>
+        <em>BEAUTY STUDIO</em>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home"     data-nav="home">Home</a></li>
+        <li><a href="#about"    data-nav="about">About</a></li>
+        <li><a href="#services" data-nav="services">Services</a></li>
+        <li><a href="#pricing"  data-nav="pricing">Pricing</a></li>
+        <li><a href="#offers"   data-nav="offers">Offers</a></li>
+        <li><a href="#gallery"  data-nav="gallery">Gallery</a></li>
+        <li><a href="#team"     data-nav="team">Team</a></li>
+        <li><a href="#reviews"  data-nav="reviews">Reviews</a></li>
+        <li><a href="#contact"  data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn cart-btn" id="cartToggle" aria-label="Open shopping cart">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+             stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/>
+        </svg>
+        <span class="count" id="cartCount">0</span>
+      </button>
+
+      <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="ico-sun" viewBox="0 0 24 24" width="19" height="19" fill="none"
+             stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/>
+        </svg>
+        <svg class="ico-moon" viewBox="0 0 24 24" width="19" height="19" fill="none"
+             stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/>
+        </svg>
+      </button>
+
+      <a href="#booking" class="btn btn-primary btn-sm hide-sm">BOOK APPOINTMENT</a>
+    </div>
+  </div>
+</header>
+
+<!-- =========================================================
+     MOBILE MENU
+     ========================================================= -->
+<aside class="mobile-menu" id="mobileMenu" aria-hidden="true" aria-label="Mobile navigation">
+  <div class="mobile-menu-head">
+    <span class="brand-text">
+      <strong>GLAMORA</strong><em>BEAUTY STUDIO</em>
+    </span>
+    <button class="icon-btn" id="menuClose" aria-label="Close menu">✕</button>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Mobile menu links">
+    <a href="#home"     data-nav="home">Home</a>
+    <a href="#about"    data-nav="about">About</a>
+    <a href="#services" data-nav="services">Services</a>
+    <a href="#pricing"  data-nav="pricing">Pricing</a>
+    <a href="#offers"   data-nav="offers">Offers</a>
+    <a href="#gallery"  data-nav="gallery">Gallery</a>
+    <a href="#team"     data-nav="team">Team</a>
+    <a href="#reviews"  data-nav="reviews">Reviews</a>
+    <a href="#contact"  data-nav="contact">Contact</a>
+  </nav>
+
+  <div class="mobile-menu-foot">
+    <a href="#booking" class="btn btn-primary btn-block" id="mobileBook">BOOK APPOINTMENT</a>
+    <a href="tel:03003014052" class="mobile-contact">0300 3014052</a>
+    <a href="mailto:hello@glamorabeauty.com" class="mobile-contact">hello@glamorabeauty.com</a>
+    <div class="socials">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="Facebook">Facebook</a>
+      <a href="#" aria-label="TikTok">TikTok</a>
+    </div>
+  </div>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+
+<!-- =========================================================
+     MAIN CONTENT
+     ========================================================= -->
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <span class="hero-badge anim-up">PREMIUM BEAUTY EXPERIENCE</span>
+      <h1 class="hero-title anim-up d1">WHERE BEAUTY MEETS <em>CONFIDENCE</em></h1>
+      <p class="hero-text anim-up d2">
+        Experience professional beauty treatments, personalized styling and premium salon
+        services designed to make you feel your best.
+      </p>
+      <div class="hero-buttons anim-up d3">
+        <a href="#booking"  class="btn btn-primary">BOOK APPOINTMENT</a>
+        <a href="#services" class="btn btn-outline-light">EXPLORE SERVICES</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true"><span></span>Scroll</div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="trust-strip">
+    <div class="container trust-grid">
+      <div class="trust-item"><strong>Certified Experts</strong><span>Trained beauty specialists</span></div>
+      <div class="trust-item"><strong>Premium Products</strong><span>Salon-grade brands only</span></div>
+      <div class="trust-item"><strong>Hygienic Environment</strong><span>Sanitised tools &amp; space</span></div>
+      <div class="trust-item"><strong>Personalised Care</strong><span>Tailored to your needs</span></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+
+      <div class="about-media reveal">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80"
+             alt="Interior of Glamora Beauty Studio" loading="lazy" onerror="__imgFallback(this)">
+        <div class="about-media-accent">
+          <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=600&q=80"
+               alt="Beauty specialist providing a facial treatment" loading="lazy" onerror="__imgFallback(this)">
+        </div>
+      </div>
+
+      <div class="about-copy reveal">
+        <span class="eyebrow">Our Story</span>
+        <h2 class="section-title left">BEAUTY WITH A <em>PERSONAL TOUCH</em></h2>
+        <p>Glamora Beauty Studio was founded on a simple belief — that every woman deserves to feel
+           confident, pampered and completely herself. From our calm, light-filled space to our
+           carefully selected product range, everything is designed around your comfort.</p>
+        <p>Our team of experienced beauty specialists brings years of combined expertise across
+           hair, makeup, skincare and bridal styling. We take the time to understand your features,
+           your lifestyle and your vision before we begin.</p>
+
+        <ul class="about-list">
+          <li>Personalised consultations for every service</li>
+          <li>Premium, cruelty-free professional products</li>
+          <li>Strict hygiene and sanitisation standards</li>
+          <li>Relaxing, welcoming studio atmosphere</li>
+        </ul>
+
+        <a href="#booking" class="btn btn-primary">BOOK A CONSULTATION</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="stats-grid" id="statsGrid">
+        <div class="stat reveal"><span class="stat-num" data-count="8"  data-suffix="+">0</span><span class="stat-label">Years Experience</span></div>
+        <div class="stat reveal"><span class="stat-num" data-count="15" data-suffix="+">0</span><span class="stat-label">Beauty Specialists</span></div>
+        <div class="stat reveal"><span class="stat-num" data-count="10" data-suffix="K+">0</span><span class="stat-label">Happy Clients</span></div>
+        <div class="stat reveal"><span class="stat-num" data-count="30" data-suffix="+">0</span><span class="stat-label">Beauty Services</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="eyebrow">What We Offer</span>
+        <h2 class="section-title">OUR SIGNATURE SERVICES</h2>
+        <p class="section-sub">From everyday grooming to bridal transformations — delivered with care.</p>
+      </header>
+
+      <div class="service-filters reveal" id="serviceFilters" role="tablist" aria-label="Service categories">
+        <button class="chip active" data-cat="all">All</button>
+        <button class="chip" data-cat="Hair">Hair</button>
+        <button class="chip" data-cat="Makeup">Makeup</button>
+        <button class="chip" data-cat="Nails">Nails</button>
+        <button class="chip" data-cat="Facial">Facial</button>
+        <button class="chip" data-cat="Skin Care">Skin Care</button>
+        <button class="chip" data-cat="Spa">Spa</button>
+        <button class="chip" data-cat="Bridal">Bridal</button>
+      </div>
+
+      <div class="service-grid" id="serviceGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="eyebrow">Packages</span>
+        <h2 class="section-title">CURATED BEAUTY PACKAGES</h2>
+        <p class="section-sub">Save more with our thoughtfully bundled treatment packages.</p>
+      </header>
+
+      <div class="pricing-grid" id="pricingGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ SPECIAL OFFERS ============ -->
+  <section class="section section-alt" id="offers">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="eyebrow">Limited Time</span>
+        <h2 class="section-title">SPECIAL OFFERS</h2>
+      </header>
+
+      <div class="offers-grid">
+
+        <article class="offer-card reveal">
+          <div class="offer-bg" style="background-image:url('https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=1200&q=80')"></div>
+          <div class="offer-overlay"></div>
+          <div class="offer-content">
+            <span class="eyebrow light">Beauty Week</span>
+            <h3 class="offer-title">GET <em>20% OFF</em> SELECTED SERVICES</h3>
+            <p>Treat yourself this week — across hair, facial and nail treatments.</p>
+            <button class="btn btn-primary" data-claim="Beauty Week Special">CLAIM OFFER</button>
+          </div>
+        </article>
+
+        <article class="offer-card reveal">
+          <div class="offer-bg" style="background-image:url('https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?auto=format&fit=crop&w=1200&q=80')"></div>
+          <div class="offer-overlay"></div>
+          <div class="offer-content">
+            <span class="eyebrow light">Bridal Season</span>
+            <h3 class="offer-title">BRIDAL <em>SEASON PACKAGE</em></h3>
+            <p>Special packages available for brides — book your consultation today.</p>
+            <a href="#pricing" class="btn btn-outline-light">VIEW PACKAGE</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Countdown -->
+      <div class="countdown-box reveal">
+        <h3 class="countdown-title">BEAUTY WEEK OFFER ENDS IN</h3>
+        <div class="countdown" id="countdown" role="timer" aria-live="polite">
+          <div class="cd-box"><span class="cd-num" id="cdDays">00</span><span class="cd-label">Days</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-box"><span class="cd-num" id="cdHours">00</span><span class="cd-label">Hours</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-box"><span class="cd-num" id="cdMins">00</span><span class="cd-label">Minutes</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-box"><span class="cd-num" id="cdSecs">00</span><span class="cd-label">Seconds</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="eyebrow">Portfolio</span>
+        <h2 class="section-title">OUR BEAUTY GALLERY</h2>
+        <p class="section-sub">A glimpse into our studio, our craft and our clients.</p>
+      </header>
+
+      <div class="gallery-grid reveal" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ BEFORE & AFTER ============ -->
+  <section class="section section-alt" id="transformations">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="eyebrow">Real Results</span>
+        <h2 class="section-title">BEFORE &amp; AFTER</h2>
+        <p class="section-sub">Drag the slider to reveal the transformation.</p>
+      </header>
+
+      <div class="ba-grid" id="baGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section class="section" id="team">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="eyebrow">Meet The Team</span>
+        <h2 class="section-title">OUR BEAUTY EXPERTS</h2>
+        <p class="section-sub">Passionate professionals dedicated to bringing out your best.</p>
+      </header>
+
+      <div class="team-grid" id="teamGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section section-alt" id="reviews">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="eyebrow">Testimonials</span>
+        <h2 class="section-title">WHAT OUR CLIENTS SAY</h2>
+      </header>
+
+      <div class="reviews-wrap reveal">
+        <div class="reviews-track" id="reviewsTrack"></div>
+        <div class="reviews-controls">
+          <button class="icon-btn round" id="reviewPrev" aria-label="Previous review">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                 stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m14 6-6 6 6 6"/>
+            </svg>
+          </button>
+          <div class="reviews-dots" id="reviewsDots"></div>
+          <button class="icon-btn round" id="reviewNext" aria-label="Next review">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                 stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m10 6 6 6-6 6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BEAUTY PRODUCTS ============ -->
+  <section class="section" id="products">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="eyebrow">Take Home</span>
+        <h2 class="section-title">OUR BEAUTY ESSENTIALS</h2>
+        <p class="section-sub">Salon-grade products, hand-picked for daily care.</p>
+      </header>
+
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ APPOINTMENT BOOKING ============ -->
+  <section class="section section-alt" id="booking">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="eyebrow">Book With Us</span>
+        <h2 class="section-title">BOOK YOUR APPOINTMENT</h2>
+        <p class="section-sub">Fill in your details and we'll confirm your slot shortly.</p>
+      </header>
+
+      <div class="booking-layout">
+        <form class="booking-form reveal" id="bookingForm" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="bkName">Full Name *</label>
+              <input type="text" id="bkName" name="name" autocomplete="name" required>
+              <span class="error" data-error-for="bkName"></span>
+            </div>
+            <div class="field">
+              <label for="bkPhone">Phone Number *</label>
+              <input type="tel" id="bkPhone" name="phone" autocomplete="tel" required>
+              <span class="error" data-error-for="bkPhone"></span>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="bkEmail">Email *</label>
+              <input type="email" id="bkEmail" name="email" autocomplete="email" required>
+              <span class="error" data-error-for="bkEmail"></span>
+            </div>
+            <div class="field">
+              <label for="bkService">Service *</label>
+              <select id="bkService" name="service" required>
+                <option value="">Select a service…</option>
+                <option>Haircut &amp; Styling</option>
+                <option>Hair Coloring</option>
+                <option>Makeup</option>
+                <option>Facial</option>
+                <option>Manicure</option>
+                <option>Pedicure</option>
+                <option>Spa</option>
+                <option>Bridal Makeup</option>
+                <option>Other</option>
+              </select>
+              <span class="error" data-error-for="bkService"></span>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="bkDate">Preferred Date *</label>
+              <input type="date" id="bkDate" name="date" required>
+              <span class="error" data-error-for="bkDate"></span>
+            </div>
+            <div class="field">
+              <label for="bkTime">Preferred Time *</label>
+              <input type="time" id="bkTime" name="time" required>
+              <span class="error" data-error-for="bkTime"></span>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="bkGuests">Number of Guests</label>
+              <input type="number" id="bkGuests" name="guests" min="1" max="10" value="1">
+              <span class="error" data-error-for="bkGuests"></span>
+            </div>
+            <div class="field">
+              <label for="bkRequest">Special Request</label>
+              <input type="text" id="bkRequest" name="request" placeholder="Optional">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">BOOK MY APPOINTMENT</button>
+          <p class="form-msg" id="bookingMsg" role="status"></p>
+        </form>
+
+        <div class="booking-summary reveal" id="bookingSummary" aria-live="polite">
+          <div class="bs-placeholder">
+            <span class="bs-icon">✦</span>
+            <h3>Your Booking Summary</h3>
+            <p>Once you submit the form, your appointment details and booking ID will appear here.</p>
+            <ul class="bs-perks">
+              <li>Instant confirmation request</li>
+              <li>Personal call-back within 2 hours</li>
+              <li>Free rescheduling up to 24 hrs before</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="eyebrow">Get In Touch</span>
+        <h2 class="section-title">VISIT OUR STUDIO</h2>
+        <p class="section-sub">We'd love to welcome you. Reach out anytime.</p>
+      </header>
+
+      <div class="contact-layout">
+
+        <div class="contact-info reveal">
+          <ul class="contact-list">
+            <li>
+              <span class="ci-icon">☎</span>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:03003014052">0300 3014052</a>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon">✉</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:hello@glamorabeauty.com">hello@glamorabeauty.com</a>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon">◎</span>
+              <div>
+                <strong>Address</strong>
+                <span>Main Market, Hyderabad, Sindh, Pakistan</span>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon">◷</span>
+              <div>
+                <strong>Opening Hours</strong>
+                <span>Monday – Saturday: 10:00 AM – 9:00 PM</span>
+                <span>Sunday: 12:00 PM – 8:00 PM</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="contact-actions">
+            <a href="tel:03003014052" class="btn btn-primary btn-sm">CALL US</a>
+            <a href="mailto:hello@glamorabeauty.com" class="btn btn-outline btn-sm">EMAIL US</a>
+            <a href="https://wa.me/923003014052?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Glamora%20Beauty%20Studio."
+               target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">WHATSAPP</a>
+          </div>
+
+          <div class="map-placeholder" role="img" aria-label="Map showing Glamora Beauty Studio location">
+            <div class="map-grid"></div>
+            <div class="map-pin">◎</div>
+            <div class="map-caption">
+              <strong>Glamora Beauty Studio</strong>
+              <span>Main Market, Hyderabad, Sindh</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="ctName">Name *</label>
+            <input type="text" id="ctName" name="name" autocomplete="name" required>
+            <span class="error" data-error-for="ctName"></span>
+          </div>
+          <div class="field">
+            <label for="ctEmail">Email *</label>
+            <input type="email" id="ctEmail" name="email" autocomplete="email" required>
+            <span class="error" data-error-for="ctEmail"></span>
+          </div>
+          <div class="field">
+            <label for="ctPhone">Phone *</label>
+            <input type="tel" id="ctPhone" name="phone" autocomplete="tel" required>
+            <span class="error" data-error-for="ctPhone"></span>
+          </div>
+          <div class="field">
+            <label for="ctMessage">Message *</label>
+            <textarea id="ctMessage" name="message" rows="5" required></textarea>
+            <span class="error" data-error-for="ctMessage"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">SEND MESSAGE</button>
+          <p class="form-msg" id="contactMsg" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="newsletter">
+    <div class="container newsletter-inner reveal">
+      <span class="eyebrow light">Stay In Touch</span>
+      <h2 class="newsletter-title">JOIN OUR BEAUTY COMMUNITY</h2>
+      <p>Get beauty tips, exclusive offers and the latest salon updates.</p>
+
+      <form class="newsletter-form" id="newsletterForm" novalidate>
+        <label class="sr-only" for="newsletterEmail">Email address</label>
+        <input type="email" id="newsletterEmail" placeholder="Enter your email" autocomplete="email" required>
+        <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+      </form>
+      <p class="form-msg" id="newsletterMsg" role="status"></p>
+    </div>
+  </section>
+</main>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <a class="brand" href="#home">
+        <span class="brand-mark">G</span>
+        <span class="brand-text"><strong>GLAMORA</strong><em>BEAUTY STUDIO</em></span>
+      </a>
+      <p>Premium hair, makeup, skincare and bridal services delivered with a personal touch. Beauty. Confidence. You.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="TikTok">TikTok</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#services">Hair Styling</a></li>
+        <li><a href="#services">Makeup</a></li>
+        <li><a href="#services">Facials</a></li>
+        <li><a href="#services">Bridal</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="#booking">Book Appointment</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Visit Us</h3>
+      <ul class="footer-contact">
+        <li><a href="tel:03003014052">0300 3014052</a></li>
+        <li><a href="mailto:hello@glamorabeauty.com">hello@glamorabeauty.com</a></li>
+        <li>Main Market, Hyderabad,<br>Sindh, Pakistan</li>
+        <li>Mon – Sat: 10:00 AM – 9:00 PM<br>Sun: 12:00 PM – 8:00 PM</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2026 Glamora Beauty Studio. All Rights Reserved.</p>
+    <p class="footer-note">Crafted with care · Beauty. Confidence. You.</p>
+  </div>
+</footer>
+
+<!-- =========================================================
+     CART DRAWER
+     ========================================================= -->
+<aside class="drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
+  <div class="drawer-head">
+    <h2>Your Cart (<span id="cartDrawerCount">0</span>)</h2>
+    <button class="icon-btn" data-close-drawer aria-label="Close cart">✕</button>
+  </div>
+  <div class="drawer-body" id="cartItems"></div>
+  <div class="drawer-foot" id="cartFoot"></div>
+</aside>
+
+<!-- =========================================================
+     LIGHTBOX
+     ========================================================= -->
+<div class="modal" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-box modal-xl lightbox-box">
+    <button class="icon-btn modal-close" data-close-modal aria-label="Close image viewer">✕</button>
+    <button class="icon-btn lightbox-nav lightbox-prev" id="lbPrev" aria-label="Previous image">‹</button>
+    <button class="icon-btn lightbox-nav lightbox-next" id="lbNext" aria-label="Next image">›</button>
+    <div class="lightbox-content">
+      <img id="lbImage" src="" alt="">
+      <p class="lightbox-caption" id="lbCaption"></p>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================
+     FLOATING ACTIONS
+     ========================================================= -->
+<a class="whatsapp-float"
+   href="https://wa.me/923003014052?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Glamora%20Beauty%20Studio."
+   target="_blank" rel="noopener" aria-label="Chat with Glamora Beauty Studio on WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.24.68-1.42 1.3-1.96 1.35-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.37-.14-.19-1.17-1.56-1.17-2.97 0-1.42.74-2.11 1-2.4.26-.29.57-.36.76-.36l.55.01c.17 0 .41-.07.64.49.24.58.81 1.99.88 2.13.07.15.12.32.02.51-.1.19-.15.31-.29.48l-.44.51c-.14.14-.29.3-.12.58.17.29.74 1.23 1.6 1.99 1.1.98 2.03 1.28 2.32 1.42.29.15.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.39-.24.65-.15.26.1 1.66.78 1.94.92.29.15.48.22.55.34.07.12.07.7-.17 1.38Z"/>
+  </svg>
+</a>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+       stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m6 14 6-6 6 6"/>
+  </svg>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- =========================================================
+     SCRIPT
+     ========================================================= -->
+<script src="script.js"></script>
+</body>
+</html>
